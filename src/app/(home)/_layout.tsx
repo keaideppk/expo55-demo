@@ -6,6 +6,7 @@ export default function Layout() {
       <Stack.Screen name="index" />
       <Stack.Screen name="headerBotton" />
       <Stack.Screen name="bottomToolbar" />
+      <Stack.Screen name="context-menu-picker" options={{ title: 'ContextMenu + Picker' }} />
     </Stack>
   );
 }

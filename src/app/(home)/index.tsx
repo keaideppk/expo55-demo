@@ -37,6 +37,19 @@ export default function HomeScreen() {
           Go to Bottom Toolbar
         </Text>
       </Pressable>
+      <Pressable
+        onPress={() => router.push("/(home)/context-menu-picker")}
+        style={({ pressed }) => ({
+          paddingVertical: 12,
+          paddingHorizontal: 24,
+          backgroundColor: pressed ? "#0056b3" : "#007AFF",
+          borderRadius: 8,
+        })}
+      >
+        <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600" }}>
+          Go to ContextMenu + Picker
+        </Text>
+      </Pressable>
     </View>
   );
 }
